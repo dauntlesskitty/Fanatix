@@ -1,0 +1,133 @@
+
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>FanaTix User</title>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<style>
+	body { font-family: 'Trebuchet MS'; }
+</style>
+</head>
+
+<body>
+	<main>
+		<ul>
+			<li style="float:left;">
+				<!-- <img src="images/logo.png" alt="Logo" style="width: 100px;"> -->
+			</li>
+			<li><a href="homepage.html">Home</a></li>
+			<li><a href="concerts.html">Concerts</a></li>
+			<li><a href="promoter.html">Promoters</a></li>
+			<li><a href="prices.html">Sales</a></li>
+			<div class="dropdown">
+				<li><a>Profiles</a>
+				<div class="dropdown-content">
+					<a href="admin.html">Admin</a>
+					<a href="user.html">User</a></li>	
+			<li><a href="buytix.html">Buy Tickets</a></li>
+				</div>
+			</div>
+		</ul>
+	</main>
+
+		<P ID="Ttitle">EVENT TICKET PURCHASE</P>
+
+	<div id="container">
+
+		<div id="nav" style="margin-top:15px;">
+			<img src="images/concert.jpg" alt="Logo" style="width: 700px;float:left;">
+		</div>
+
+		<div id="maincontent" >
+			<form name="form1" method="post">
+				<div id="profiledisplay" s>
+				<h3 style="color: gold;">GOLD Tickets [Price: $450]</h3>
+				<input type="checkbox" name="seats" id="Aseat" value="A1">Seat A1</input>
+				<input type="checkbox" name="seats" id="Aseat" value="A2">Seat A2</input>
+				<input type="checkbox" name="seats" id="Aseat" value="A3">Seat A3</input>
+				<input type="checkbox" name="seats" id="Aseat" value="A3">Seat A3</input>
+				<br/>
+				
+				<h3 style="color: silver;">VIP Tickets [Price: $345]</h3>
+				<input type="checkbox" name="seats" id="Bseat" value="B1">Seat B1</input>
+				<input type="checkbox" name="seats" id="Bseat" value="B2">Seat B2</input>
+				<input type="checkbox" name="seats" id="Bseat" value="B3">Seat B3</input>
+				<input type="checkbox" name="seats" id="Bseat" value="B4">Seat B4</input>
+				<br/>
+				
+				<h3 style="color: green;">CAT1 Tickets [Price: $210]</h3>
+				<input type="checkbox" name="seats" id="Cseat" value="C1">Seat C1</input>
+				<input type="checkbox" name="seats" id="Cseat" value="C3">Seat C2</input>
+				<input type="checkbox" name="seats" id="Cseat" value="C4">Seat C3</input>
+				<input type="checkbox" name="seats" id="Cseat" value="C4">Seat C4</input>
+				<br/>
+				
+				<h3 style="color: green;">CAT2 Tickets [Price: $180]</h3>
+				<input type="checkbox" name="seats" id="Dseat" value="D1">Seat D1</input>
+				<input type="checkbox" name="seats" id="Dseat" value="D2">Seat D2</input>
+				<input type="checkbox" name="seats" id="Dseat" value="D3">Seat D3</input>
+				<input type="checkbox" name="seats" id="Dseat" value="D4">Seat D4</input>
+				<br/>
+				
+				<h3 style="color: green;">CAT3 Tickets [Price: $98]</h3>
+				<input type="checkbox" name="seats" id="Eseat" value="E1">Seat E1</input>
+				<input type="checkbox" name="seats" id="Eseat" value="E2">Seat E2</input>
+				<input type="checkbox" name="seats" id="Eseat" value="E3">Seat E3</input>
+				<input type="checkbox" name="seats" id="Eseat" value="E4">Seat E4</input>
+				<br/>
+				<h3>TOTAL : $<span class="total"></h3>
+				<button type="button" style="margin-top: 30px;height:60px;width:90px">BUY</button>
+				</div>
+			</form>
+		</div>
+
+	<script type="text/javascript">
+		$(function() {
+	    $('input').click(function(){
+
+	        var total = 0;
+
+	        $('input:checked').each(function(index, item) {
+	            // total += parseFloat(item.value);
+	            if(this.id==="Aseat" && this.checked){
+	            	total+=450;
+	            }
+	            if(this.id==="Bseat" && this.checked){
+	            	total+=345;
+	            }
+
+	            if(this.id==="Cseat" && this.checked){
+	            	total+=210;
+	            }
+				
+				if(this.id==="Dseat" && this.checked){
+	            	total+=180;
+	            }
+				
+				if(this.id==="Eseat" && this.checked){
+	            	total+=98;
+	            }
+	        	
+	        });
+	        $('.total').text(total);
+	    });
+		});
+	</script>
+
+	<script>
+        $(document).ready(function() {
+        $("button").click(function(){
+            var favorite = [];
+            $.each($("input[name='seats']:checked"), function(){            
+                favorite.push($(this).val());
+            });
+            alert("Tickets bought: " + favorite.join(", "));
+        });
+    });
+    </script>
+
+	</div>
+	
+
+
+</body>

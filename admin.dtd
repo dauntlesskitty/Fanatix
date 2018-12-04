@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT admins (admin)+>
+
+<!ELEMENT admin (imageURL, name, password, email, phone)+>
+
+<!ELEMENT imageURL (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!ATTLIST admin adminID CDATA #IMPLIED>

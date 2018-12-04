@@ -1,0 +1,60 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>FanaTix</title>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		$.ajax({
+			type: "GET",
+			url: "user.xml",
+			dataType: "xml",
+			success: function(xml) {
+			<!-- var select = $('#concertSel'); -->
+
+			$(xml).find('users').each(function(){
+				$(this).find('user').each(function(){
+						if(item.find('username').text()==$('#userid').val() && item.find('password').text()==$('#pwd').val()){
+							window.open('homepage.html');
+						}		
+						else{
+							alert("Wrong password!");
+						}
+				});
+			});
+		}
+		}); 
+	}); 
+
+    </script>
+	<style>
+	body { font-family: 'Trebuchet MS'; }
+	</style>
+</head>
+
+
+<body>
+	<!-- LOGIN FORM -->
+    <div style="text-align: center;">
+	    <div><img src="images/1.jpg" alt="logo" height="250"/></div>
+	    <div>
+		    <form>
+				<div id="loginForm">
+					<h1>Welcome to FanaTix</h1>
+						<form method="GET" action="" >
+							<label><b>Username :</label>
+							<input type="text" placeholder="Enter Username"  id="userid" required>
+							<br/>
+							<label><b>Password :</label>
+							<input type="password" placeholder="Enter Password"  id="pwd" required>
+		
+							<div style="margin-top: 35px;">
+								<a href="homepage.html" class="button2 bouncy" style="animation-delay:0.07s">Login</a>
+							</div>
+						</form>
+				</div>
+		    </form>
+	    </div>
+    </div>
+</body>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT users (user)+>
+
+<!ELEMENT user (imageURL, name, password, address, email, phone)+>
+
+<!ELEMENT imageURL (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+
+<!ATTLIST user userID CDATA #IMPLIED>

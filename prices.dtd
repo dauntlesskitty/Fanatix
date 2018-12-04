@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT prices (price)+>
+
+<!ATTLIST prices xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+                 xmlns:xsi CDATA #IMPLIED>
+
+<!ELEMENT price (pe|totalseats)*>
+
+<!ELEMENT pe (#PCDATA)>
+<!ELEMENT totalseats (#PCDATA)>
+
+<!ATTLIST price pid CDATA #IMPLIED
+                type CDATA #IMPLIED>

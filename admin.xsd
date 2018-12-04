@@ -1,0 +1,33 @@
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  
+  <xs:element name="admins">
+  <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="admin"  maxOccurs="unbounded"/>
+      </xs:sequence>
+  </xs:complexType>
+  </xs:element>
+
+  <xs:element name="admin">
+   <xs:complexType>
+      <xs:sequence>
+         <xs:element name="imageURL" type="xs:string"/>
+         <xs:element name="name" type="xs:string"/>
+         <xs:element name="password" type="xs:string"/>
+         <xs:element name="email" type="xs:string"/>
+         <xs:element ref="phone"/>
+      </xs:sequence>
+      <xs:attribute name="adminID" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="phone">
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\([0-9]{3}\) [0-9]{3}-[0-9]{4}" />
+    </xs:restriction>
+   </xs:simpleType>
+  </xs:element>
+
+</xs:schema>

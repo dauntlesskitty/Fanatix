@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="prices.xsl" ?>
+
+<!DOCTYPE prices SYSTEM "prices.dtd">
+
+<prices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="prices.xsd">
+	<price pid="P001" type="GOLD">
+	<pe>450</pe>
+	<totalseats>50</totalseats>
+	</price>
+	<price pid="P002" type="VIP">
+	<pe>345</pe>
+	<totalseats>40</totalseats>
+	</price>
+	<price pid="P003" type="CAT1" >
+	<pe>210</pe>
+	<totalseats>50</totalseats>
+	</price>
+	<price pid="P004" type="CAT2">
+	<pe>180</pe>
+	<totalseats>50</totalseats>
+	</price>
+	<price pid="P005" type="CAT3">
+	<pe>98</pe>
+	<totalseats>100</totalseats>
+	</price>
+</prices>
+

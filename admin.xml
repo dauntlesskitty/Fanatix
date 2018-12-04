@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<!DOCTYPE admins SYSTEM "admin.dtd">-->
+
+<?xml-stylesheet type="text/xsl" href="admin.xsl" ?>
+
+<admins xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+          xs:noNamespaceSchemaLocation="admin.xsd">
+
+	<admin adminID="AD001">
+		<imageURL>https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Kermit_the_Frog.jpg/220px-Kermit_the_Frog.jpg</imageURL>
+		<name>Samat</name>
+		<password>S@c@mam@00</password>
+		<email>samat@gmail.com</email>
+		<phone>(603) 555-7555</phone>
+	</admin>
+	<admin adminID="AD002">
+		<imageURL>https://img1.ak.crunchyroll.com/i/spire2/575b7a9c305285d85f0dc266a2cd50ed1536752460_large.png</imageURL>
+		<name>Kishwar Labial</name>
+		<password>wewewew001</password>
+		<email>wewewew@gmail.com</email>
+		<phone>(603) 555-7888</phone>
+	</admin>
+</admins>

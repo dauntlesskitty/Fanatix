@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+	<xs:element name="concerts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="concert" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="concert" maxOccurs="unbounded">
+		<xs:complexType>
+			<xs:sequence>
+				 <xs:element name="event-name" type="xs:string"></xs:element>
+                 <xs:element name="artist" type="xs:string"></xs:element>
+                 <xs:element name="date" type="xs:string"></xs:element>
+                 <xs:element name="start" type="xs:string"></xs:element>
+                 <xs:element name="end" type="xs:string"></xs:element>
+                 <xs:element name="location" type="xs:string"></xs:element>
+                 <xs:element name="organizer" type="xs:string"></xs:element>
+                 <xs:element name="description" type="xs:string"></xs:element>
+                 <xs:element ref="price" type="xs:double">
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="price">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="GOLD" type="xs:double">
+					<xs:complexType>
+						<xs:attribute name="pid" type="xs:string"></xs:attribute>
+						<xs:attribute name="currency" type="xs:string"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="VIP" type="xs:double">
+					<xs:complexType>
+						<xs:attribute name="pid" type="xs:string"></xs:attribute>
+						<xs:attribute name="currency" type="xs:string"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CAT1" type="xs:double">
+					<xs:complexType>
+						<xs:attribute name="pid" type="xs:string"></xs:attribute>
+						<xs:attribute name="currency" type="xs:string"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CAT2" type="xs:double">
+					<xs:complexType>
+						<xs:attribute name="pid" type="xs:string"></xs:attribute>
+						<xs:attribute name="currency" type="xs:string"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CAT3" type="xs:double">
+					<xs:complexType>
+						<xs:attribute name="pid" type="xs:string"></xs:attribute>
+						<xs:attribute name="currency" type="xs:string"></xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:attribute name="cID" type="xs:string"></xs:attribute>
+   
+</xs:schema>

@@ -1,0 +1,119 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>FanaTix User</title>
+	<link rel="stylesheet" href="main.css" type="text/css" />
+	
+	<style>
+	body { font-family: 'Trebuchet MS'; }
+	</style>
+	<script>
+	function loadXMLDoc(filename){
+		if (window.ActiveXObject){
+			xhttp = new ActiveXObject("Msxml2.XMLHTTP");
+		}
+		else {
+			xhttp = new XMLHttpRequest();
+		}
+		xhttp.open("GET", filename, false);
+		try {
+		xhttp.responseType = "msxml-document"} catch(err) {} // Helping IE11
+		xhttp.send("");
+		return xhttp.responseXML;
+	}
+
+	function displayResult(){
+		xml = loadXMLDoc("concerts.xml");
+		xsl = loadXMLDoc("homepage.xsl");
+		// code for IE
+		if (window.ActiveXObject || xhttp.responseType == "msxml-document"){
+			ex = xml.transformNode(xsl);
+			document.getElementById("concerts").innerHTML = ex;
+		}
+		// code for Chrome, Firefox, Opera, etc.
+		else if (document.implementation && document.implementation.createDocument){
+			xsltProcessor = new XSLTProcessor();
+			xsltProcessor.importStylesheet(xsl);
+			resultDocument = xsltProcessor.transformToFragment(xml, document);
+			document.getElementById("concerts").appendChild(resultDocument);
+		}
+	}
+	</script>
+</head>
+
+<body onload="displayResult()">
+<!-- Navigation-->
+	<main>
+		<ul id="menu">
+			<li style="float:left;">
+			</li>
+			<li><a class="active" href="homepage.html">Home</a></li>
+			<li><a href="concerts.html">Concerts</a></li>
+			<li><a href="promoter.html">Promoters</a></li>
+			<li><a href="prices.html">Sales</a></li>
+			<div class="dropdown">
+				<li><a>Profiles</a>
+				<div class="dropdown-content">
+					<a href="admin.html">Admin</a>
+					<a href="user.html">User</a></li>	
+			<li><a href="buytix.html">Buy Tickets</a></li>
+				</div>
+			</div>
+		</ul>
+	</main>
+
+<!-- Slider -->
+<div id="slider">
+  <div class="slides">
+    <div class="slider">
+      <div class="content">
+        <div class="content-txt">
+          <h1>Trending Now!</h1>
+          <h2>See the chart toppers!</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/1.jpg">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="content">
+        <div class="content-txt">
+          <h1>Crazy!</h1>
+          <h2>Prepare to get blown away!</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/2.jpg">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="content">
+        <div class="content-txt">
+          <h1>Amazing!!</h1>
+          <h2>These hits will leave you shaken!</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/3.jpg">
+      </div>
+    </div>
+	<div class="slider">
+      <div class="content">
+        <div class="content-txt">
+          <h1>Watch out!</h1>
+          <h2>The Boys are back again with a new hit!</h2>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/5.png">
+      </div>
+    </div>
+  </div>
+ </div>
+ <!-- Contents -->
+<div>
+	<h2 id="Ttitle">TOP TRENDING CONCERTS</h2>
+	<div id="concerts"/>
+</div>
+	
+</body>

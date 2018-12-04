@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE users SYSTEM "user.dtd">
+
+<users>
+	<user userID="U001">
+		<imageURL>https://upload.wikimedia.org/wikipedia/commons/b/be/Hyuk_at_Dream_Concert_2017.png</imageURL>
+		<name>Han Sanghyuk</name>
+		<password>hyogi@0</password>
+		<address>A place far away</address>
+		<email>hsh@gmail.com</email>
+		<phone>(603) 111-7888</phone>
+	</user>
+	<user userID="U002">
+		<imageURL>https://i.pinimg.com/originals/9c/47/6f/9c476f6aa40670146707e89a6e12bea6.jpg</imageURL>
+		<name>Lee Honbin</name>
+		<password>redbe@nzz6957</password>
+		<address>A place far away</address>
+		<email>beanbean@gmail.com</email>
+		<phone>(603) 222-7888</phone>
+	</user>
+	<user userID="U003">
+		<imageURL>https://data.whicdn.com/images/168851253/superthumb.jpg?t=1426743616</imageURL>
+		<name>Pyo Jihoon</name>
+		<password>T0P$$</password>
+		<address>In a washing machine</address>
+		<email>pyopyo@gmail.com</email>
+		<phone>(603) 333-7888</phone>
+	</user>
+</users>

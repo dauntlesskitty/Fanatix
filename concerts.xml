@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="concerts.xsl" ?>
+<?xml-stylesheet type="text/xsl" href="homepage.xsl" ?>
+<concerts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="concerts.xsd">
+	<concert cID="CT001">
+		<event-name>LR Live</event-name>
+		<artist>VIXX LR</artist>
+		<genre>K-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>09:00:00</end>
+		<organizer>SAMAT FOUNDATION</organizer>
+		<promoters>
+			<promoter>Kakao Talk</promoter>
+			<promoter>Universal Music Studios</promoter>
+			<promoter>HitzFM</promoter>
+			<promoter>JellyFish</promoter>
+		</promoters>
+		<description>
+		VIXX LR (Korean: 빅스 LR) is the first official sub-unit of South Korean boy group VIXX formed by Jellyfish Entertainment. 
+		Established in August 2015, VIXX LR consists of VIXX's main vocalist Leo and main rapper Ravi. 
+		The sub-unit debuted with their first mini album, titled Beautiful Liar and will performing LIVE for us FANATICS! EXCITED MUCH?!
+		</description>
+	</concert>
+	
+	<concert cID="CT002">
+		<event-name>BTS World Tour: Love Yourself</event-name>
+		<artist>BTS</artist>
+		<genre>K-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>09:00:00</end>
+		<organizer>ARMY Corps</organizer>
+		<promoters>
+			<promoter>Kakao Talk</promoter>
+			<promoter>BigHit</promoter>
+			<promoter>Jongkook Merons</promoter>
+		</promoters>
+		<description>
+		BTS World Tour: Love Yourself is the third worldwide concert tour headlined by South Korean band BTS to promote their Love Yourself series, 
+		including their Love Yourself: Her EP, Love Yourself: Tear studio album, and Love Yourself. Come on ARMYs WHAT ARE YOU WAITING FOR?
+		</description>
+	</concert>
+	
+	<concert cID="CT003">
+		<event-name>SVT Ideal CUT</event-name>
+		<artist>SEVENTEEN</artist>
+		<genre>K-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>09:00:00</end>
+		<organizer>CARAT BONG BONG</organizer>
+		<promoters>
+			<promoter>CARATZ</promoter>
+			<promoter>Pledis</promoter>
+			<promoter>Mosh Mosh Tv</promoter>
+		</promoters>
+		<description>
+		The 13 talented and good looking boys from SEVENTEEN will be having their concert in several countries, greeting 
+		their fans from the world.Since then, they have been actively promoting and came up with many of their hit songs such as ‘Mansae’, 
+		‘Very Nice’, ‘Boom Boom’, ‘Clap’ and so on! Lets get your CARAT BONG CLAPPING!
+		</description>
+	</concert>
+	
+	<concert cID="CT004">
+		<event-name>Jay Chou's Magical Live</event-name>
+		<artist>Jay Chou (周杰倫)</artist>
+		<genre>C-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>10:00:00</end>
+		<organizer>Chair Corps</organizer>
+		<promoters>
+			<promoter>GO XUAN</promoter>
+			<promoter>MyFM</promoter>
+		</promoters>
+		<description>
+		Jay Chou's First ever magical live! Many Surprises await at this mysterious new concert! 
+		Special secret guests stars also await you at this concert! As any die-hard fan will already know, 
+		Jay Chou tickets are hard to come by because the star has kept fans waiting for his latest tour. 
+		</description>
+	</concert>
+	
+	<concert cID="CT005">
+		<event-name>AMeiZING World Tour</event-name>
+		<artist>Zhang Hui Mei (张惠妹)</artist>
+		<genre>C-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>10:00:00</end>
+		<organizer>AMeiZING</organizer>
+		<promoters>
+			<promoter>MyFM</promoter>
+			<promoter>Meiri Jin</promoter>
+		</promoters>
+		<description>
+		A-Mei Is DA BOMB! She has been in the music industry for more than 16 years and she has even been nicknamed as the 
+		“Pride of Taiwan” and “Taiwanese Madonna”. A-Mei is one artist that can really entertain you with her singing, dancing and showmanship. 
+		This firecracker is now in the middle of her AMeiZING World Tour and guess where she’s heading to? Yes, she’s making a stop here at Fanatics for show!
+		</description>
+	</concert>
+	
+	<concert cID="CT006">
+		<event-name>A Classic Tour</event-name>
+		<artist>Jacky Cheung (周杰倫)</artist>
+		<genre>C-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>10:00:00</end>
+		<organizer>Star Planet</organizer>
+		<promoters>
+			<promoter>Goldsands</promoter>
+			<promoter>MyFM</promoter>
+			<promoter>Allianz</promoter>
+		</promoters>
+		<description>
+		The legendary “God of Song” Jacky Cheung will return to perform for a night performance for us FANATICS.
+		Jacky Cheung “A Classic Tour” was first brought into Malaysia in last January with ticket demand far exceeding supply. 
+		And this upcoming “Encore” tour is anticipated to be another sellout concert! 
+		</description>
+	</concert>
+	
+	<concert cID="CT007">
+		<event-name>Fly FlaMANGOES</event-name>
+		<artist>Kenshi Yonezu (米津 玄師)</artist>
+		<genre>J-POP</genre>
+		<date>2019-01-19</date>
+		<start>07:00:00</start>
+		<end>10:00:00</end>
+		<organizer>Lemon Corps</organizer>
+		<promoters>
+			<promoter>SmaRT fLY</promoter>
+			<promoter>Meiji</promoter>
+			<promoter>BNHA</promoter>
+		</promoters>
+		<description>
+		Yonezu continues to be praised across Japan, and it’s been shown that he enjoys success with people in their teens all the way into their 50s. 
+		Thriving in this success, Yonezu embarked on a tour around the country.Kenshi Yonezu will perform his best new song titled 'Lemon' which was written as the main 
+		theme song for the TBS Friday drama “Unnatural”.
+		</description>
+	</concert>
+	
+	<concert cID="CT008">
+		<event-name>Paper Bunnies</event-name>
+		<artist>Kumabukuro and Rabbit</artist>
+		<genre>J-POP</genre>
+		<date>2019-01-19</date>
+		<start>22:00:00</start>
+		<end>23:00:00</end>
+		<organizer>SAMAT FOUNDATION</organizer>
+		<promoters>
+			<promoter>Meiji</promoter>
+			<promoter>oDYSSEY</promoter>
+			<promoter>SMART</promoter>
+		</promoters>
+		<description>
+		The first ever Paper Bunnies Live is coming soon! Many wonders await at the first appearance of this fantastic BEAST DUOS!
+		Watch them live as they perform BULGOGI one of the craziest solo that makes their fans waiting for more!!!
+		</description>
+	</concert>
+	
+	<concert cID="CT009">
+		<event-name>Tokyo Fantasy</event-name>
+		<artist>SEKAI NO OWARI</artist>
+		<genre>J-POP</genre>
+		<date>2019-01-19</date>
+		<start>22:00:00</start>
+		<end>23:00:00</end>
+		<organizer>Dragon Heart</organizer>
+		<promoters>
+			<promoter>Knights</promoter>
+			<promoter>Sekai no Baka</promoter>
+		</promoters>
+		<description>
+		End of the World (SEKAI NO OWARI) is currently one of Japan’s most popular and skilled creative groups. The group is comprised of four distinctly 
+		talented members: Nakajin, Fukase, Saori and the masked clown DJ LOVE. These four childhood friends grew closer while collectively managing the 
+		live music venue clubEARTH, which they built from the ground up. 
+		</description>
+	</concert>
+	
+	<concert cID="CT010">
+		<event-name>The Pray for the Wicked Tour</event-name>
+		<artist>Panic! At The Disco</artist>
+		<genre>E-POP</genre>
+		<date>2019-01-19</date>
+		<start>22:00:00</start>
+		<end>23:00:00</end>
+		<organizer>Monalisa Ballad</organizer>
+		<promoters>
+			<promoter>HitzFM</promoter>
+			<promoter>oDYSSEY</promoter>
+		</promoters>
+		<description>
+		Make sure you see Panic! At the Disco live, and prepare for an experience that will last for a lifetime!
+		One of the biggest acts to emerge out of the emo movement of the mid-2000s, Panic! At the Disco transcended their early fame, 
+		transforming into a vehicle for singer Brendon Urie's charismatic, cross-pollinated brand of pop
+		</description>
+	</concert>
+	
+	<concert cID="CT011">
+		<event-name>Take my Love Away Tour</event-name>
+		<artist>Bad Suns</artist>
+		<genre>E-POP</genre>
+		<date>2019-01-19</date>
+		<start>22:00:00</start>
+		<end>23:00:00</end>
+		<organizer>SALT CORP</organizer>
+		<promoters>
+			<promoter>Meiji</promoter>
+			<promoter>oDYSSEY</promoter>
+			<promoter>SMART</promoter>
+		</promoters>
+		<description>
+		After a thunderous two years following the release of their first EP, Transpose, and their debut, Language and 
+		Perspective, Bad Suns’ newest effort, Disappear Here, aims to quell all concerns of a sophomore slump in the form of 
+		their most dynamic and introspective work yet. Having to follow monumental singles from their debut, 
+		like “Cardiac Arrest” and “Salt”, Bad Suns gave themselves quite the mountain to climb.Fortunately, much of Disappear Here  rises to the challenge.
+		</description>
+	</concert>
+	
+	<concert cID="CT012">
+		<event-name>Meet you There</event-name>
+		<artist>5SOS</artist>
+		<genre>E-POP</genre>
+		<date>2019-01-19</date>
+		<start>22:00:00</start>
+		<end>23:00:00</end>
+		<organizer>WHOTMATE corp</organizer>
+		<promoters>
+			<promoter>Kangaroos</promoter>
+			<promoter>NoSpidersPLS Corps</promoter>
+		</promoters>
+		<description>
+		Being an enormous fan of 5 Seconds of Summer for a consecutive five years now, I think that 
+		I have gained the right to do a review on their well-known Meet You There tour. After a two year break in 
+		which the 5SOS guys took well-needed time for themselves and began working on their third album Youngblood, Luke Hemmings, 
+		Ashton Irwin, Michael Clifford and Calum Hood returned in full force with countless hit songs and a worldwide tour that managed to sell out within minutes in various locations.
+		</description>
+	</concert>
+	
+</concerts>

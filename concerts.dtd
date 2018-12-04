@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!ELEMENT concerts (concert)+>
+<!ATTLIST concerts xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+                   xmlns:xsi CDATA #IMPLIED >
+
+<!ELEMENT concert (event-name, artist, genre, date, start, end, organizer, promoters, description)+>
+
+<!ELEMENT event-name (#PCDATA)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT start (#PCDATA)>
+<!ELEMENT end (#PCDATA)>
+<!ELEMENT organizer (#PCDATA)>
+<!ELEMENT promoters (promoter)*>
+<!ELEMENT promoter (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ATTLIST concert cID CDATA #IMPLIED >
